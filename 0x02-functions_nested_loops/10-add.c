@@ -2,13 +2,11 @@
 
 /**
   * add - add two integers and returns the result
-  * @a: one of the parameters
-  * @b: the other parameter
+  * @one: one of the parameters
+  * @two: the other parameter
   * Return: 0
   */
-int add(int a, int b)
+int add(int one, int two)
 {
-	a = 90;
-	b = 8;
-	return (a + b);
+	return (one + two);
 }
