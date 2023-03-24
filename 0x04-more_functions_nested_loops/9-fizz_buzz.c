@@ -36,7 +36,7 @@ int main(void)
 		{
 			printf(" ");
 		}
-		printf("\n");
-		return (0);
 	}
+	printf("\n");
+	return (0);
 }
