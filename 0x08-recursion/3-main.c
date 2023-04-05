@@ -1,8 +1,22 @@
-Write a function that returns the factorial of a given number.
+#include "main.h"
+#include <stdio.h>
 
-Prototype: int factorial(int n);
-If n is lower than 0, the function should return -1 to indicate an error
-Factorial of 0 is 1
+/**
+   * main - check the code
+    *
+     * Return: Always 0.
+      */
+int main(void)
+{
+	    int r;
 
-
-
+	        r = factorial(1);
+		    printf("%d\n", r);
+		        r = factorial(5);
+			    printf("%d\n", r);
+			        r = factorial(10);
+				    printf("%d\n", r);
+				        r = factorial(-1024);
+					    printf("%d\n", r);
+					        return (0);
+}
