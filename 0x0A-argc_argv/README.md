@@ -7,4 +7,9 @@ You should not remove the path before the name of the program
 
 Your program should print a number, followed by a new line
 
+2-args.c Write a program that prints all arguments it receives.
+
+All arguments should be printed, including the first one
+Only print one argument per line, ending with a new line
+
 
