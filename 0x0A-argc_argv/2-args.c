@@ -4,6 +4,7 @@
   * @argv: parameter used for printing
   * @argc: parameter used for printing
   * Return: Always 0.
+  * main - checks for validity of the code
   */
 int main(int argc, char *argv[])
 {
