@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
-  * @argv: parameter used for printing
-  * @argc: parameter used for printing
+  * main - checks for the correctness of the code
+  * @argv: character for printing
+  * @argc: character for printing
   * Return: Always 0.
-  * main - checks for validity of the code
   */
 int main(int argc, char *argv[])
 {
