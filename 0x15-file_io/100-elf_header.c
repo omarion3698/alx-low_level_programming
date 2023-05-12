@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
   * check_elf - Checks if a file is an ELF file.
@@ -205,7 +207,8 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 	{
-		e_entry = ((e_entry << 8) & 0xFF00FF00) | ((e_entry >> 8) & e_entry = (e_entry << 16) | (e_entry >> 16);
+		e_entry = ((e_entry << 8) & 0xFF00FF00) | ((e_entry >> 8) & 0xFF00FF);
+		e_entry = (e_entry << 16) | (e_entry >> 16);
 	}
 
 	if (e_ident[EI_CLASS] == ELFCLASS32)
@@ -277,3 +280,4 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	close_elf(fd);
 	return (0);
 }
+
